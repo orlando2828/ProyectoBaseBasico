@@ -7,6 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Login {
+    private WebDriver webDriver;
+    private WebDriverWait webDriverWait;
+
     @FindBy(xpath = "//*[@name=\"imUname\"]")
     WebElement inputUsuario;
 
@@ -19,8 +22,6 @@ public class Login {
    // @FindBy(xpath = "//*[@id=\"imLogin\"]/form/div[1]/label")
    // WebElement labelUsuario;
 
-   WebDriver webDriver;
-   WebDriverWait webDriverWait;
 
    public Login(WebDriver webDriver){
        PageFactory.initElements(webDriver, this);
