@@ -24,6 +24,7 @@ public class EjecucionLogin {
 
     @AfterTest
     public void closeDriver() {
+        webDriver.quit();
 
     }
 
